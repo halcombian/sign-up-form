@@ -1,0 +1,80 @@
+@import url(//db.onlinewebfonts.com/c/7d460b18433753a097e5bc2bad7c8dd9?family=Norse);
+@font-face {
+  font-family: "Norse";
+  src: url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.eot");
+  src: url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.woff") format("woff"), url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.svg#Norse") format("svg");
+}
+
+html,
+body {
+  background: rgba(0, 0, 0, 0.95);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+a {
+  cursor: pointer;
+}
+
+.container {
+  background: darkgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 71vw;
+  height: 100vh;
+}
+
+.header {
+  background: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80) no-repeat center;
+  background-size: cover;
+  position: relative;
+  -ms-grid-column-align: left;
+      justify-self: left;
+  width: 40%;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.header h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.45);
+  width: 100%;
+  font-family: Norse;
+  font-size: 90px;
+  padding: 12px 0 10px 0;
+  margin: 42% 0 116% 0;
+}
+
+.header img {
+  height: 120px;
+}
+
+.header p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin-left: 20px;
+}
+
+.content {
+  -ms-grid-column-align: right;
+      justify-self: right;
+  width: 68%;
+}
+/*# sourceMappingURL=style.css.map */
