@@ -1,0 +1,80 @@
+@import "./_variables.scss";
+
+.content {
+	background: $colorWhite;
+	font-family: $fontArial;
+	justify-self: right;
+	width: 67.5%;
+	.info {
+		font-weight: $fontBold;
+		font-size: $font22;
+		margin: 18.75% 17% 7.25% 5%;
+	}
+	form {
+		overflow: hidden;
+		background: white;
+		padding: 2.25% 10% 0 5%;
+		width: 85%;
+		min-height: 266px;
+		box-shadow: 0 8px 10px -10px #888888;
+		legend {
+			font-weight: $fontBold;
+			font-size: $font22;
+		}
+		.input_wrapper {
+			float: left;
+			margin: 3% 9.5% 0 0;
+			label,
+			input {
+				display: block;
+			}
+			label {
+				color: rgba(0, 0, 0, 0.65);
+				font-weight: 700;
+				font-size: 12px;
+			}
+			input {
+				border: 1px solid #e5e7eb;
+				border-radius: 5px;
+				width: 240px;
+				height: 28px;
+			}
+			input:focus {
+				outline-style: 2px solid;
+				outline-color: royalblue;
+				box-shadow: 4px 4px 3px #d1d1d1c7;
+			}
+			#errorMsg {
+				font-size: 12px;
+				color: rgb(200, 0, 0);
+				margin: 0 0 5px 0;
+			}
+		}
+	}
+	.bottom {
+		margin: 3.85% 0 0 5.25%;
+		.create_account {
+			background: $colorGreen;
+			border: none;
+			border-radius: 8px;
+			height: 47px;
+			width: 222px;
+			box-shadow: 2px 3px 4px #88888885;
+			color: $colorWhite;
+			font-size: 16px;
+			font-weight: $fontBold;
+		}
+		.create_account:hover {
+			background: #738f5c;
+			cursor: pointer;
+		}
+		.bottom_text {
+			font-weight: bold;
+			margin-top: 36px;
+			#login {
+				color: $colorGreen;
+				text-decoration: none;
+			}
+		}
+	}
+}

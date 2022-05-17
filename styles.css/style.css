@@ -1,38 +1,4 @@
 @import url(//db.onlinewebfonts.com/c/7d460b18433753a097e5bc2bad7c8dd9?family=Norse);
-@font-face {
-  font-family: "Norse";
-  src: url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.eot");
-  src: url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.woff") format("woff"), url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.svg#Norse") format("svg");
-}
-
-html,
-body {
-  background: rgba(0, 0, 0, 0.95);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-}
-
-a {
-  cursor: pointer;
-}
-
-.container {
-  background: darkgray;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 71vw;
-  height: 100vh;
-}
-
 .header {
   background: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80) no-repeat center;
   background-size: cover;
@@ -40,7 +6,7 @@ a {
   -ms-grid-column-align: left;
       justify-self: left;
   width: 40%;
-  color: whitesmoke;
+  color: #fafafa;
   text-align: center;
 }
 
@@ -73,8 +39,132 @@ a {
 }
 
 .content {
+  background: #fafafa;
+  font-family: Arial, Helvetica, sans-serif;
   -ms-grid-column-align: right;
       justify-self: right;
-  width: 68%;
+  width: 67.5%;
+}
+
+.content .info {
+  font-weight: bold;
+  font-size: 22px;
+  margin: 18.75% 17% 7.25% 5%;
+}
+
+.content form {
+  overflow: hidden;
+  background: white;
+  padding: 2.25% 10% 0 5%;
+  width: 85%;
+  min-height: 266px;
+  -webkit-box-shadow: 0 8px 10px -10px #888888;
+          box-shadow: 0 8px 10px -10px #888888;
+}
+
+.content form legend {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.content form .input_wrapper {
+  float: left;
+  margin: 3% 9.5% 0 0;
+}
+
+.content form .input_wrapper label,
+.content form .input_wrapper input {
+  display: block;
+}
+
+.content form .input_wrapper label {
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.content form .input_wrapper input {
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  width: 240px;
+  height: 28px;
+}
+
+.content form .input_wrapper input:focus {
+  outline-style: 2px solid;
+  outline-color: royalblue;
+  -webkit-box-shadow: 4px 4px 3px #d1d1d1c7;
+          box-shadow: 4px 4px 3px #d1d1d1c7;
+}
+
+.content form .input_wrapper #errorMsg {
+  font-size: 12px;
+  color: #c80000;
+  margin: 0 0 5px 0;
+}
+
+.content .bottom {
+  margin: 3.85% 0 0 5.25%;
+}
+
+.content .bottom .create_account {
+  background: #596d48;
+  border: none;
+  border-radius: 8px;
+  height: 47px;
+  width: 222px;
+  -webkit-box-shadow: 2px 3px 4px #88888885;
+          box-shadow: 2px 3px 4px #88888885;
+  color: #fafafa;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.content .bottom .create_account:hover {
+  background: #738f5c;
+  cursor: pointer;
+}
+
+.content .bottom .bottom_text {
+  font-weight: bold;
+  margin-top: 36px;
+}
+
+.content .bottom .bottom_text #login {
+  color: #596d48;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Norse";
+  src: url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.eot");
+  src: url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.woff") format("woff"), url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.svg#Norse") format("svg");
+}
+
+html,
+body {
+  background: rgba(0, 0, 0, 0.95);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+a {
+  cursor: pointer;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 71vw;
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */

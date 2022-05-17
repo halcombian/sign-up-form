@@ -22,38 +22,49 @@
             </div>
             <div class="content">
                 <div class="info">
-                    This is not a real online service! You know you need something like this
+                    <p>This is not a real online service! You know you need something like this
                     in your life to help you realize your deepest dreams. Sign up
-                    <i>now</i> to get started.
+                    <i>now</i> to get started.</p>
+                
+                    <p>You <i>know</i> you want to.</p>
                 </div>
-                <form action="example.com/path" method="post">
+                <form id="form" action="example.com/path" method="post">
                     <legend>Let's do this!</legend>
-        
-                    <label for="first_name">FIRST NAME:</label>
-                    <input
-                        type="text"
-                        id="first_name"
-                        name="first_name"
-                        placeholder="John..."
-                    />
-        
-                    <label for="last_name">LAST NAME:</label>
-                    <input type="text" id="last_name" name="last_name" placeholder="Doe..." />
-        
-                    <label for="email">EMAIL:</label>
-                    <input type="email" id="email" name="email" />
-        
-                    <label for="phone_number">PHONE NUMBER:</label>
-                    <input type="number" id="phone_number" name="phone_number" />
-        
-                    <label for="password">PASSWORD:</label>
-                    <input type="text" id="password" name="password" />
-        
-                    <label for="confirm_password">CONFIRM PASSWORD:</label>
-                    <input type="text" id="confirm_password" name="confirm_password" />
+                    
+                    <div class="input_wrapper">
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" id="first_name" name="first_name" />
+                    </div>
+
+                    <div class="input_wrapper">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" id="last_name" name="last_name" />
+                    </div>
+
+                    <div class="input_wrapper">
+                        <label for="email">EMAIL</label>
+                         <input type="email" id="email" name="email" />
+                    </div>
+
+                    <div class="input_wrapper">
+                        <label for="phone_number">PHONE NUMBER</label>
+                        <input type="number" id="phone_number" name="phone_number" />
+                    </div>
+
+                    <div class="input_wrapper" id="cp_wrapper">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" />
+                    </div>
+
+                    <div class="input_wrapper">
+                        <label for="confirm_password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm_password" name="confirm_password" />
+                    </div>
                 </form>
-                <button type="submit" class="create_account">Create Account</button>
-                <p>Already have an account? <a href="example.com">Log in</a></p>
+                <div class="bottom">
+                    <button type="submit" class="create_account" id="button">Create Account</button>
+                    <p class="bottom_text">Already have an account? <a id="login" href="example.com">Log in</a></p>
+                </div>
             </div>
         </div>
 
